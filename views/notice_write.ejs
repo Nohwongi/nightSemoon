@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 작성</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/notice_write.css">
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>
+                <a href="../main.html">서문시장야시장</a>
+            </h1>
+            <ul class="gnb m_hide">
+                <li><a href="introduce.html">야시장소개</a></li>
+                <li><a href="stand.html">야시장매대</a></li>
+                <li><a href="market.html">먹거리살거리</a></li>
+                <li><a href="">서문거리예술문화</a></li>
+                <li><a href="">참여마당</a></li>
+                <li><a href="">입점신청</a></li>
+            </ul>
+            <ul class="sns_1 no_hide">
+                <li><a class="login" href="login.html"></a></li>
+            </ul>
+            <ul class="sns_2 hide">
+                <li><a class="login" href="login.html"></a></li>
+                <li><a class="notice" href="notice.html"></a></li>
+                <li><a class="fb" href="https://www.facebook.com/nightseomun/" target="_blank"></a></li>
+                <li><a class="ig" href="" target="_blank"></a></li>
+                <li><a class="yt" href="https://www.youtube.com/watch?v=OdQ_ya1SF24" target="_blank"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>공지사항 작성하기</h2>
+            <form method="POST" action="/store">
+                <table>
+                    <tr>
+                        <td><label>제목 : </label></td>
+                        <td><input type="text" id="NTC_title" name="NTC_title"></td>
+                    </tr>
+                    <tr>
+                        <td><label>이름 : </label></td>
+                        <td><input type="text" name="NTC_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>날짜 : </label></td>
+                        <td><input type="date" name="NTC_date"></td>
+                    </tr>
+                    <tr>
+                        <td>내용 작성 : </td>
+                        <td><textarea name="NTC_detail"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>첨부 : </td>
+                        <td><input type="file" name="NTC_file" value="파일첨부"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="저장">
+                            <input type="button" value="취소" onclick="javascript:location.href='/'">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀 Admin<br>
+            Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>

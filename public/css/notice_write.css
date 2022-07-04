@@ -1,0 +1,28 @@
+section {
+    width: 1440px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 20px 10px;
+}
+
+#NTC_title {
+    width: 500px;
+}
+
+textarea {
+    width: 1200px;
+    height: 346px;
+}

@@ -1,0 +1,170 @@
+.no_hide {
+    display: none;
+}
+
+header {
+    height: 70px;
+    background-color: #141E3C;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header_wrap {
+    width: 1440px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.menu {
+    background-color: #FFE100;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.menu>span {
+    display: block;
+    width: 19px;
+    height: 3px;
+    background-color: #141E3C;
+    margin: 5px 5px;
+}
+
+h1>a {
+    font-size: 20px;
+    line-height: 70px;
+    color: #FFE100;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.gnb {
+    width: 841px;
+    display: flex;
+    margin-left: 90px;
+    line-height: 70px;
+    justify-content: space-between;
+}
+
+.gnb a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFE100;
+}
+
+.sns_1 {
+    margin-right: 17px;
+}
+
+.sns_1 a {
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.sns_2 {
+    margin-left: 72px;
+    display: flex;
+    width: 171px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns_2 a {
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.login {
+    background-image: url(../img/login.png);
+    display: block;
+}
+
+.notice {
+    background-image: url(../img/notice.png);
+    display: block;
+}
+
+.fb {
+    background-image: url(../img/sns_facebook_icon.png);
+    display: block;
+}
+
+.ig {
+    background-image: url(../img/sns_insta_icon.png);
+    display: block;
+}
+
+.yt {
+    background-image: url(../img/sns_youtube_icon.png);
+    display: block;
+}
+
+
+/***********************footer*************************/
+footer {
+    background-color: #141E3C;
+}
+
+footer>p {
+    color: #FFE100;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .m_hide {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header_wrap {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .no_hide {
+        display: block;
+    }
+    
+    .hide {
+        display: none;
+    }
+
+    footer>p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1>a {
+        margin-left: 0;
+    }
+
+    .sns_1 {
+        margin-left: 0;
+    }
+    
+    .hide_767 {
+        display: none;
+    }
+
+    footer>p {
+        font-size: 12px;
+    }
+}

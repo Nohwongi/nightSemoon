@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>update Memo Add</h1>
+  <% if(typeof errs !== "undefined") { %>
+    <% errs.forEach((err)=>{%>
+      <h3><%=err.param%> : <%=err.msg%></h3>
+    <% }) %>
+  <% } %>
+  <form method="POST" action="/updateMemo" >
+      <input type="hidden" name="id" value="<%=row.ID%>">
+      <textarea name="content"><%=row.CONTENT%></textarea>
+      <input type="submit" value="submit">
+      <input type="button" value="back" onclick="javascript:location.href='/'">
+  </form>
+</body>
+</html>
